@@ -55,8 +55,65 @@
       >
       <br />
     </section>
-    <section id="outputContent">
-      <div class="output"></div>
+    <section id="outputContentOne">
+      <div class="output">
+        <h3>Area of a right angle triangle</h3>
+        <img src="/right-angled-triangle.png" alt="right-angle-triangle" />
+        <p>The formula to calculate the area of right angled triangle is</p>
+        <h4>Formula: 1/2 x base x height</h4>
+        <form class="calcArea">
+          <label for="base">base</label>
+          <input type="number" class="base" min="1" required />
+          <label for="base">height</label>
+          <input type="number" class="height" min="1" required />
+          <button class="calcAreaOne">Calculate</button>
+        </form>
+        <div>
+          <h4 id="areaOneResult"></h4>
+        </div>
+      </div>
+    </section>
+    <section id="outputContentTwo">
+      <div class="output">
+        <h3>Area of an equilateral triangle</h3>
+        <img src="/equilateral-triangle.png" alt="equilateral-triangle" />
+        <p>The formula to calculate the area of equilateral triangle is</p>
+        <h4>Formula: (√3)/4 × side <sup>2</sup></h4>
+        <form class="calcArea">
+          <label for="side">side</label>
+          <input type="number" class="side" min="1" required />
+          <button class="calcAreaTwo">Calculate</button>
+        </form>
+        <div>
+          <h4 id="areaTwoResult"></h4>
+        </div>
+      </div>
+    </section>
+    <section id="outputContentThree">
+      <div class="output">
+        <h3>Area of a triangle (with 3 different sides)</h3>
+        <img src="/scalene-triangle.png" alt="scalene-triangle" />
+        <p>
+          Area of triangle with 3 sides of different measures can be found using
+          Heron's formula:
+        </p>
+        <h4>
+          Formula: √( s(s-a)(s-b)(s-c) ) <br />
+          where , s is semi-perimeter of the triangle = s = (a+b+c) / 2
+        </h4>
+        <form class="calcArea">
+          <label for="sideOne">a</label>
+          <input type="number" class="sideOne" min="1" required />
+          <label for="sideTwo">b</label>
+          <input type="number" class="sideTwo" min="1" required />
+          <label for="sideThree">c</label>
+          <input type="number" class="sideThree" min="1" required />
+          <button class="calcAreaThree">Calculate</button>
+        </form>
+        <div>
+          <h4 id="areaThreeResult"></h4>
+        </div>
+      </div>
     </section>
     <script src="app.js"></script>
   </body>
