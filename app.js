@@ -20,6 +20,10 @@ const sideTwo = document.querySelector(".sideTwo");
 const sideThree = document.querySelector(".sideThree");
 const areaThreeResult = document.querySelector("#areaThreeResult");
 const outputContentThree = document.querySelector("#outputContentThree");
+const calcAreaFour = document.querySelector(".calcAreaFour");
+const angleA = document.querySelector(".angleA");
+const sideB = document.querySelector(".sideB");
+const sideC = document.querySelector(".sideC");
 
 outputContentOne.style.display = "none";
 outputContentTwo.style.display = "none";
@@ -93,6 +97,19 @@ function calculateAreaThree(e) {
   areaThreeResult.innerText = `Area of triange is ${finalValue} units`;
 }
 
+function calculateAreaFour(e) {
+  e.preventDefault();
+  const angleAValue = parseInt(angleA.value);
+  console.log(angleAValue);
+  const sideBValue = parseInt(sideB.value);
+  console.log(sideBValue);
+  const sideCValue = parseInt(sideC.value);
+  console.log(sideCValue);
+  const sinAngle = Math.sinAngle(30);
+  console.log(sinAngle);
+  // let formula = 0.5*sideBValue*sideCValue*
+}
+
 function inputChangeOne() {
   console.log("1st input field checked");
   outputContentOne.style.display = "block";
@@ -127,3 +144,4 @@ inputFieldFour.addEventListener("change", inputChangeFour);
 calcAreaOne.addEventListener("click", calculateAreaOne);
 calcAreaTwo.addEventListener("click", calculateAreaTwo);
 calcAreaThree.addEventListener("click", calculateAreaThree);
+calcAreaFour.addEventListener("click", calculateAreaFour);

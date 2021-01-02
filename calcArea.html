@@ -99,7 +99,7 @@
         </p>
         <h4>
           Formula: √( s(s-a)(s-b)(s-c) ) <br />
-          where , s is semi-perimeter of the triangle = s = (a+b+c) / 2
+          where , s is semi-perimeter of the triangle : s = (a+b+c) / 2
         </h4>
         <form class="calcArea">
           <label for="sideOne">a</label>
@@ -112,6 +112,34 @@
         </form>
         <div>
           <h4 id="areaThreeResult"></h4>
+        </div>
+      </div>
+    </section>
+    <section id="outputContentFour">
+      <div class="output">
+        <h3>Area of a triangle (with 2 sides and one angle known)</h3>
+        <img src="/two-sides-one-angle-triangle.gif" alt="triangle" />
+        <p>
+          Area of triangle with 2 sides and an angle included between them known
+          can be found by:
+        </p>
+        <h4>
+          Formula: Area (∆ABC) = ½ bc sin A
+          <br />
+          where , b & c are sides of a triangle and ∠A is an angle between them.
+        </h4>
+
+        <form class="calcArea">
+          <label for="angle">∠A</label>
+          <input type="number" class="angleA" min="1" max="180" required />
+          <label for="side">b</label>
+          <input type="number" class="sideB" min="1" required />
+          <label for="side">c</label>
+          <input type="number" class="sideC" min="1" required />
+          <button class="calcAreaFour" type="submit">Calculate</button>
+        </form>
+        <div>
+          <h4 id="areaFourResult"></h4>
         </div>
       </div>
     </section>
