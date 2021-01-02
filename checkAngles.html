@@ -24,6 +24,22 @@
         </li>
       </ul>
     </nav>
+    <header>
+      <h2>Let's see whether angles form a triangle</h2>
+    </header>
+    <section>
+      <p>Please input the measure of all the angles of triangle in degrees</p>
+      <small>For eg. For ▲ABC , input ∠A, ∠B, ∠C </small>
+      <form id="angles-form">
+        <label for="angle-1">∠A</label>
+        <input type="number" min="1" max="180" required />
+        <label for="angle-2">∠B</label>
+        <input type="number" min="1" max="180" required />
+        <label for="angle-3">∠C</label>
+        <input type="number" min="1" max="180" required />
+        <button class="submitBtn">Submit</button>
+      </form>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
