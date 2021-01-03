@@ -30,16 +30,51 @@
     <section>
       <div>
         <img src="/right-angle-triangle.png" alt="right-angle-triangle" />
+        <p>
+          Hypotenuse of a right angled triangle can be found using pythagoras
+          theorem as follows:
+        </p>
+        <h4>Formula: hypotenuse = √(base² + height²)</h4>
         <p>Enter the length of base and perpendicular height of a triangle</p>
         <form id="hypo-form">
           <label for="base">Base</label>
-          <input type="number" min="1" required /><br /><br />
+          <input type="number" id="hypoBase" min="1" required /><br /><br />
           <label for="height">Height</label>
-          <input type="number" min="1" required /> <br /><br />
+          <input type="number" id="hypoHeight" min="1" required />
+          <br /><br />
           <button class="submitBtn">Submit</button>
         </form>
+        <div>
+          <h4 id="calcHypo"></h4>
+        </div>
       </div>
     </section>
+    <script>
+      const base = document.querySelector("#hypoBase");
+      const height = document.querySelector("#hypoHeight");
+      const submitBtn = document.querySelector(".submitBtn");
+      const calcHypo = document.querySelector("#calcHypo");
+
+      function btnClickHandler(e) {
+        e.preventDefault();
+        const hypoBaseValue = parseInt(base.value);
+        const hypoHeightValue = parseInt(height.value);
+        console.log(hypoBaseValue);
+        console.log(hypoHeightValue);
+        const baseSquare = hypoBaseValue * hypoBaseValue;
+        const heightSquare = hypoHeightValue * hypoHeightValue;
+        const result = baseSquare + heightSquare;
+        console.log(result);
+        console.log(baseSquare);
+        console.log(heightSquare);
+        const finalResult = Math.sqrt(result);
+        console.log(finalResult);
+
+        calcHypo.innerText = `Hypotenuse of a triangle with base ${hypoBaseValue} units & height ${hypoHeightValue} units is ${finalResult} units`;
+      }
+
+      submitBtn.addEventListener("click", btnClickHandler);
+    </script>
     <script src="app.js"></script>
   </body>
 </html>
