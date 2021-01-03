@@ -29,3 +29,17 @@ section {
   display: inline;
   margin-right: 2rem;
 }
+
+#form-quiz {
+  max-width: 500px;
+  margin: auto;
+}
+
+.label {
+  display: block;
+  border: 1px solid black;
+}
+
+.quiz-content {
+  margin-bottom: 2rem;
+}
