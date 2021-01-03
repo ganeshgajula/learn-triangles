@@ -24,10 +24,12 @@ const calcAreaFour = document.querySelector(".calcAreaFour");
 const angleA = document.querySelector(".angleA");
 const sideB = document.querySelector(".sideB");
 const sideC = document.querySelector(".sideC");
+const outputContentFour = document.querySelector("#outputContentFour");
 
 outputContentOne.style.display = "none";
 outputContentTwo.style.display = "none";
 outputContentThree.style.display = "none";
+outputContentFour.style.display = "none";
 // function clickHandler() {
 //   // console.log(inputFields.length)
 //   for (var i = 0; i < inputFields.length; i++) {
@@ -105,34 +107,50 @@ function calculateAreaFour(e) {
   console.log(sideBValue);
   const sideCValue = parseInt(sideC.value);
   console.log(sideCValue);
-  const sinAngle = Math.sinAngle(30);
-  console.log(sinAngle);
-  // let formula = 0.5*sideBValue*sideCValue*
+  const piValue = Math.PI;
+  const finalPiValue = piValue.toFixed(2);
+  console.log(finalPiValue);
+  angleInRadians = angleAValue * (finalPiValue / 180);
+  const finalAngle = angleInRadians.toFixed(2);
+  console.log(finalAngle);
+  const sinValue = Math.sin(finalAngle);
+  const finalSinValue = sinValue.toFixed(2);
+  console.log(finalSinValue);
+  let formula = 0.5 * sideBValue * sideCValue * finalSinValue;
+  console.log(formula);
+  areaFourResult.innerText = `Are of triangle is ${formula} units`;
 }
 
 function inputChangeOne() {
   console.log("1st input field checked");
-  outputContentOne.style.display = "block";
   outputContentTwo.style.display = "none";
   outputContentThree.style.display = "none";
+  outputContentFour.style.display = "none";
+  outputContentOne.style.display = "block";
 }
 
 function inputChangeTwo() {
   console.log("2nd input field checked");
   outputContentOne.style.display = "none";
   outputContentThree.style.display = "none";
+  outputContentFour.style.display = "none";
   outputContentTwo.style.display = "block";
 }
 
 function inputChangeThree() {
   console.log("3rd input field checked");
-  outputContentThree.style.display = "block";
   outputContentOne.style.display = "none";
   outputContentTwo.style.display = "none";
+  outputContentFour.style.display = "none";
+  outputContentThree.style.display = "block";
 }
 
 function inputChangeFour() {
   console.log("4th input field checked");
+  outputContentOne.style.display = "none";
+  outputContentTwo.style.display = "none";
+  outputContentThree.style.display = "none";
+  outputContentFour.style.display = "block";
 }
 
 // submitBtn.addEventListener("click", clickHandler);
