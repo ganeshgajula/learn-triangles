@@ -27,31 +27,33 @@
     <header id="heading-title">
       <h2>Let's calculate Area</h2>
     </header>
-    <section>
+    <section id="area-section">
       <p>Pick an option from below</p>
-      <input type="radio" name="options" value="first" />
+
       <label for="option1"
-        >Area of a right angled triange (base and height (perpendicular
-        distance) known)</label
+        ><input type="radio" name="options" value="first" />Area of a right
+        angled triange (base and height known)</label
       >
       <br />
       <br />
-      <input type="radio" name="options" value="second" />
+
       <label for="option2"
-        >Area of an equilateral triange (all sides of triangle must be
-        equal)</label
+        ><input type="radio" name="options" value="second" />Area of an
+        equilateral triange (all sides of triangle must be equal)</label
       >
       <br />
       <br />
-      <input type="radio" name="options" value="third" />
+
       <label for="option3"
-        >Area of a triangle (with all 3 sides having different measures)</label
+        ><input type="radio" name="options" value="third" />Area of a triangle
+        (with all 3 sides having different measures)</label
       >
       <br />
       <br />
-      <input type="radio" name="options" value="four" />
+
       <label for="option4"
-        >Area of a triangle (with 2 sides and one angle known)</label
+        ><input type="radio" name="options" value="four" />Area of a triangle
+        (with 2 sides and one angle known)</label
       >
       <br />
     </section>
@@ -62,9 +64,11 @@
         <p>The formula to calculate the area of right angled triangle is</p>
         <h4>Formula: 1/2 x base x height</h4>
         <form class="calcArea">
-          <label for="base">base</label>
-          <input type="number" class="base" min="1" required />
-          <label for="base">height</label>
+          <label for="base"
+            >base:<input type="number" class="base" min="1" required
+          /></label>
+
+          <label for="base">height:</label>
           <input type="number" class="height" min="1" required />
           <button class="calcAreaOne">Calculate</button>
         </form>
