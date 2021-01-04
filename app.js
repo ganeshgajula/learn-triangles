@@ -1,6 +1,7 @@
 const result = document.querySelector(".resultTxt");
 // console.log(formContent.elements.length);
-
+let score = 0;
+const scoreDisplay = document.querySelectorAll(".score");
 // const submitBtn = document.querySelector(".submitBtn");
 
 // submitBtn.addEventListener("click", clickHandler);
@@ -85,11 +86,14 @@ function setOneAnswerOneClickHandler() {
     correct[0].style.display = "block";
     resultMsg[0].innerText = "😃 Correct! Great";
     contentOne[0].style.display = "none";
+    score = score + 1;
+    scoreDisplay[0].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[0].innerText = "😟 Incorrect! Review it";
     contentOne[0].style.display = "none";
     correct[0].style.display = "block";
+    scoreDisplay[0].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetOne.length; i++) {
     quizSetOne[i].disabled = true;
@@ -102,11 +106,14 @@ function setOneAnswerTwoClickHandler() {
     correct[0].style.display = "block";
     resultMsg[0].innerText = "😃 Correct! Great";
     contentOne[0].style.display = "none";
+    score = score + 1;
+    scoreDisplay[0].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[0].innerText = "😟 Incorrect! Review it";
     contentOne[0].style.display = "none";
     correct[0].style.display = "block";
+    scoreDisplay[0].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetOne.length; i++) {
     quizSetOne[i].disabled = true;
@@ -119,11 +126,14 @@ function setOneAnswerThreeClickHandler() {
     correct[0].style.display = "block";
     resultMsg[0].innerText = "😃 Correct! Great";
     contentOne[0].style.display = "none";
+    score = score + 1;
+    scoreDisplay[0].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[0].innerText = "😟 Incorrect! Review it";
     contentOne[0].style.display = "none";
     correct[0].style.display = "block";
+    scoreDisplay[0].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetOne.length; i++) {
     quizSetOne[i].disabled = true;
@@ -137,11 +147,14 @@ function setTwoAnswerOneClickHandler() {
     correct[1].style.display = "block";
     resultMsg[1].innerText = "😃 Correct! Great";
     contentOne[1].style.display = "none";
+    score = score + 1;
+    scoreDisplay[1].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[1].innerText = "😟 Incorrect! Review it";
     contentOne[1].style.display = "none";
     correct[1].style.display = "block";
+    scoreDisplay[1].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetTwo.length; i++) {
     quizSetTwo[i].disabled = true;
@@ -154,11 +167,14 @@ function setTwoAnswerTwoClickHandler() {
     correct[1].style.display = "block";
     resultMsg[1].innerText = "😃 Correct! Great";
     contentOne[1].style.display = "none";
+    score = score + 1;
+    scoreDisplay[1].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[1].innerText = "😟 Incorrect! Review it";
     contentOne[1].style.display = "none";
     correct[1].style.display = "block";
+    scoreDisplay[1].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetTwo.length; i++) {
     quizSetTwo[i].disabled = true;
@@ -171,11 +187,14 @@ function setTwoAnswerThreeClickHandler() {
     correct[1].style.display = "block";
     resultMsg[1].innerText = "😃 Correct! Great";
     contentOne[1].style.display = "none";
+    score = score + 1;
+    scoreDisplay[1].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[1].innerText = "😟 Incorrect! Review it";
     contentOne[1].style.display = "none";
     correct[1].style.display = "block";
+    scoreDisplay[1].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetTwo.length; i++) {
     quizSetTwo[i].disabled = true;
@@ -189,11 +208,14 @@ function setThreeAnswerOneClickHandler() {
     correct[2].style.display = "block";
     resultMsg[2].innerText = "😃 Correct! Great";
     contentOne[2].style.display = "none";
+    score = score + 1;
+    scoreDisplay[2].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[2].innerText = "😟 Incorrect! Review it";
     contentOne[2].style.display = "none";
     correct[2].style.display = "block";
+    scoreDisplay[2].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetThree.length; i++) {
     quizSetThree[i].disabled = true;
@@ -206,11 +228,14 @@ function setThreeAnswerTwoClickHandler() {
     correct[2].style.display = "block";
     resultMsg[2].innerText = "😃 Correct! Great";
     contentOne[2].style.display = "none";
+    score = score + 1;
+    scoreDisplay[2].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[2].innerText = "😟 Incorrect! Review it";
     contentOne[2].style.display = "none";
     correct[2].style.display = "block";
+    scoreDisplay[2].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetThree.length; i++) {
     quizSetThree[i].disabled = true;
@@ -223,11 +248,14 @@ function setThreeAnswerThreeClickHandler() {
     correct[2].style.display = "block";
     resultMsg[2].innerText = "😃 Correct! Great";
     contentOne[2].style.display = "none";
+    score = score + 1;
+    scoreDisplay[2].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[2].innerText = "😟 Incorrect! Review it";
     contentOne[2].style.display = "none";
     correct[2].style.display = "block";
+    scoreDisplay[2].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetThree.length; i++) {
     quizSetThree[i].disabled = true;
@@ -241,11 +269,14 @@ function setFourAnswerOneClickHandler() {
     correct[3].style.display = "block";
     resultMsg[3].innerText = "😃 Correct! Great";
     contentOne[3].style.display = "none";
+    score = score + 1;
+    scoreDisplay[3].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[3].innerText = "😟 Incorrect! Review it";
     contentOne[3].style.display = "none";
     correct[3].style.display = "block";
+    scoreDisplay[3].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetFour.length; i++) {
     quizSetFour[i].disabled = true;
@@ -258,11 +289,14 @@ function setFourAnswerTwoClickHandler() {
     correct[3].style.display = "block";
     resultMsg[3].innerText = "😃 Correct! Great";
     contentOne[3].style.display = "none";
+    score = score + 1;
+    scoreDisplay[3].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[3].innerText = "😟 Incorrect! Review it";
     contentOne[3].style.display = "none";
     correct[3].style.display = "block";
+    scoreDisplay[3].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetFour.length; i++) {
     quizSetFour[i].disabled = true;
@@ -275,11 +309,14 @@ function setFourAnswerThreeClickHandler() {
     correct[3].style.display = "block";
     resultMsg[3].innerText = "😃 Correct! Great";
     contentOne[3].style.display = "none";
+    score = score + 1;
+    scoreDisplay[3].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[3].innerText = "😟 Incorrect! Review it";
     contentOne[3].style.display = "none";
     correct[3].style.display = "block";
+    scoreDisplay[3].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetFour.length; i++) {
     quizSetFour[i].disabled = true;
@@ -292,11 +329,14 @@ function setFiveAnswerOneClickHandler() {
     correct[4].style.display = "block";
     resultMsg[4].innerText = "😃 Correct! Great";
     contentOne[4].style.display = "none";
+    score = score + 1;
+    scoreDisplay[4].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[4].innerText = "😟 Incorrect! Review it";
     contentOne[4].style.display = "none";
     correct[4].style.display = "block";
+    scoreDisplay[4].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetFive.length; i++) {
     quizSetFive[i].disabled = true;
@@ -309,11 +349,14 @@ function setFiveAnswerTwoClickHandler() {
     correct[4].style.display = "block";
     resultMsg[4].innerText = "😃 Correct! Great";
     contentOne[4].style.display = "none";
+    score = score + 1;
+    scoreDisplay[4].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[4].innerText = "😟 Incorrect! Review it";
     contentOne[4].style.display = "none";
     correct[4].style.display = "block";
+    scoreDisplay[4].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetFive.length; i++) {
     quizSetFive[i].disabled = true;
@@ -326,11 +369,14 @@ function setFiveAnswerThreeClickHandler() {
     correct[4].style.display = "block";
     resultMsg[4].innerText = "😃 Correct! Great";
     contentOne[4].style.display = "none";
+    score = score + 1;
+    scoreDisplay[4].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[4].innerText = "😟 Incorrect! Review it";
     contentOne[4].style.display = "none";
     correct[4].style.display = "block";
+    scoreDisplay[4].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetFive.length; i++) {
     quizSetFive[i].disabled = true;
@@ -343,11 +389,14 @@ function setSixAnswerOneClickHandler() {
     correct[5].style.display = "block";
     resultMsg[5].innerText = "😃 Correct! Great";
     contentOne[5].style.display = "none";
+    score = score + 1;
+    scoreDisplay[5].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[5].innerText = "😟 Incorrect! Review it";
     contentOne[5].style.display = "none";
     correct[5].style.display = "block";
+    scoreDisplay[5].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetSix.length; i++) {
     quizSetSix[i].disabled = true;
@@ -360,11 +409,14 @@ function setSixAnswerTwoClickHandler() {
     correct[5].style.display = "block";
     resultMsg[5].innerText = "😃 Correct! Great";
     contentOne[5].style.display = "none";
+    score = score + 1;
+    scoreDisplay[5].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[5].innerText = "😟 Incorrect! Review it";
     contentOne[5].style.display = "none";
     correct[5].style.display = "block";
+    scoreDisplay[5].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetSix.length; i++) {
     quizSetSix[i].disabled = true;
@@ -377,11 +429,14 @@ function setSixAnswerThreeClickHandler() {
     correct[5].style.display = "block";
     resultMsg[5].innerText = "😃 Correct! Great";
     contentOne[5].style.display = "none";
+    score = score + 1;
+    scoreDisplay[5].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[5].innerText = "😟 Incorrect! Review it";
     contentOne[5].style.display = "none";
     correct[5].style.display = "block";
+    scoreDisplay[5].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetSixz.length; i++) {
     quizSetSix[i].disabled = true;
@@ -394,11 +449,14 @@ function setSevenAnswerOneClickHandler() {
     correct[6].style.display = "block";
     resultMsg[6].innerText = "😃 Correct! Great";
     contentOne[6].style.display = "none";
+    score = score + 1;
+    scoreDisplay[6].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[6].innerText = "😟 Incorrect! Review it";
     contentOne[6].style.display = "none";
     correct[6].style.display = "block";
+    scoreDisplay[6].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetSeven.length; i++) {
     quizSetSeven[i].disabled = true;
@@ -411,11 +469,14 @@ function setSevenAnswerTwoClickHandler() {
     correct[6].style.display = "block";
     resultMsg[6].innerText = "😃 Correct! Great";
     contentOne[6].style.display = "none";
+    score = score + 1;
+    scoreDisplay[6].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[6].innerText = "😟 Incorrect! Review it";
     contentOne[6].style.display = "none";
     correct[6].style.display = "block";
+    scoreDisplay[6].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetSeven.length; i++) {
     quizSetSeven[i].disabled = true;
@@ -428,11 +489,14 @@ function setSevenAnswerThreeClickHandler() {
     correct[6].style.display = "block";
     resultMsg[6].innerText = "😃 Correct! Great";
     contentOne[6].style.display = "none";
+    score = score + 1;
+    scoreDisplay[6].innerText = `Score : ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[6].innerText = "😟 Incorrect! Review it";
     contentOne[6].style.display = "none";
     correct[6].style.display = "block";
+    scoreDisplay[6].innerText = `Score : ${score}`;
   }
   for (var i = 0; i < quizSetSeven.length; i++) {
     quizSetSeven[i].disabled = true;
@@ -445,11 +509,16 @@ function setEightAnswerOneClickHandler() {
     correct[7].style.display = "block";
     resultMsg[7].innerText = "😃 Correct! Great";
     contentOne[7].style.display = "none";
+    score = score + 1;
+    scoreDisplay[7].innerText = `Score : ${score}`;
+    result.innerText = `Final Score is ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[7].innerText = "😟 Incorrect! Review it";
     contentOne[7].style.display = "none";
     correct[7].style.display = "block";
+    scoreDisplay[7].innerText = `Score : ${score}`;
+    result.innerText = `Final Score is ${score}`;
   }
   for (var i = 0; i < quizSetEight.length; i++) {
     quizSetEight[i].disabled = true;
@@ -462,11 +531,16 @@ function setEightAnswerTwoClickHandler() {
     correct[7].style.display = "block";
     resultMsg[7].innerText = "😃 Correct! Great";
     contentOne[7].style.display = "none";
+    score = score + 1;
+    scoreDisplay[7].innerText = `Score : ${score}`;
+    result.innerText = `Final Score is ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[7].innerText = "😟 Incorrect! Review it";
     contentOne[7].style.display = "none";
     correct[7].style.display = "block";
+    scoreDisplay[7].innerText = `Score : ${score}`;
+    result.innerText = `Final Score is ${score}`;
   }
   for (var i = 0; i < quizSetEight.length; i++) {
     quizSetEight[i].disabled = true;
@@ -479,11 +553,16 @@ function setEightAnswerThreeClickHandler() {
     correct[7].style.display = "block";
     resultMsg[7].innerText = "😃 Correct! Great";
     contentOne[7].style.display = "none";
+    score = score + 1;
+    scoreDisplay[7].innerText = `Score : ${score}`;
+    result.innerText = `Final Score is ${score}`;
   } else {
     // contentOne.style.backgroundColor = "red";
     resultMsg[7].innerText = "😟 Incorrect! Review it";
     contentOne[7].style.display = "none";
     correct[7].style.display = "block";
+    scoreDisplay[7].innerText = `Score : ${score}`;
+    result.innerText = `Final Score is ${score}`;
   }
   for (var i = 0; i < quizSetEight.length; i++) {
     quizSetEight[i].disabled = true;
@@ -523,6 +602,11 @@ setSevenQuestionThree.addEventListener(
   "click",
   setSevenAnswerThreeClickHandler
 );
+// setSevenQuestionTwo.addEventListener("click", setSevenAnswerTwoClickHandler);
+// setSevenQuestionThree.addEventListener(
+//   "click",
+//   setSevenAnswerThreeClickHandler
+// );
 
 setEightQuestionOne.addEventListener("click", setEightAnswerOneClickHandler);
 setEightQuestionTwo.addEventListener("click", setEightAnswerTwoClickHandler);
