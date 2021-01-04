@@ -31,8 +31,14 @@ function answerOneClickHandler() {
   if (setOneQuestionOne.value === setOneAnswer) {
     console.log("correct");
     contentOne.style.backgroundColor = "green";
+    correct.style.display = "block";
+    correctEmoji.style.display = "block";
+    contentOne.style.display = "none";
   } else {
     contentOne.style.backgroundColor = "red";
+    wrongEmoji.style.display = "block";
+    contentOne.style.display = "none";
+    correct.style.display = "block";
   }
   for (var i = 0; i < quizSetOne.length; i++) {
     quizSetOne[i].disabled = true;
@@ -42,8 +48,14 @@ function answerTwoClickHandler() {
   if (setOneQuestionTwo.value === setOneAnswer) {
     console.log("correct");
     contentOne.style.backgroundColor = "green";
+    correct.style.display = "block";
+    correctEmoji.style.display = "block";
+    contentOne.style.display = "none";
   } else {
     contentOne.style.backgroundColor = "red";
+    wrongEmoji.style.display = "block";
+    contentOne.style.display = "none";
+    correct.style.display = "block";
   }
   for (var i = 0; i < quizSetOne.length; i++) {
     quizSetOne[i].disabled = true;
