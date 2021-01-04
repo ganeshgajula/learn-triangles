@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>learn triangles | play quiz</title>
   </head>
@@ -30,25 +36,57 @@
     </header>
     <form id="form-quiz">
       <div class="quiz-content">
+        <h2 class="wrong-emoji">😟 Incorrect! Review it</h2>
+        <h2 class="correct-emoji">😃 Correct! Great</h2>
         <label class="quiz-question"
           >1. A triangle has angles 130<sup>0</sup>, 20<sup>0</sup>and
           30<sup>0</sup>. Which type of triangle is this ?</label
         >
+        <div class="content-one">
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques1Options"
+              value="right angle triangle"
+            />
+            right angle triangle <span class="checkmark"></span>
+          </label>
 
-        <label class="label"
-          ><input type="radio" required name="ques1Options" /> right angle
-          triangle</label
-        >
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques1Options"
+              value="acute angle triangle" />
+            acute angle triangle <span class="checkmark"></span
+          ></label>
 
-        <label class="label"
-          ><input type="radio" required name="ques1Options" /> acute angle
-          triangle</label
-        >
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques1Options"
+              value="obtuse angle triangle" />
+            obtuse angle triangle <span class="checkmark"></span
+          ></label>
+        </div>
+        <div class="correct">
+          <div class="new-answer wrongOne">
+            <i class="fas fa-window-close"></i>
+            right angle triangle <span class="checkmark"></span>
+          </div>
 
-        <label class="label"
-          ><input type="radio" required name="ques1Options" /> obtuse angle
-          triangle</label
-        >
+          <div class="new-answer wrongOne">
+            <i class="fas fa-window-close"></i>
+            acute angle triangle <span class="checkmark"></span>
+          </div>
+
+          <div class="new-answer correctOne">
+            <i class="fas fa-check-square"></i>
+            obtuse angle triangle <span class="checkmark"></span>
+          </div>
+        </div>
       </div>
       <div class="quiz-content">
         <label class="quiz-question"
@@ -57,17 +95,17 @@
         >
 
         <label class="label"
-          ><input type="radio" required name="ques2Options" />obtuse angle
+          ><input type="radio" required name="ques2Options" /> obtuse angle
           triangle</label
         >
 
         <label class="label"
-          ><input type="radio" required name="ques2Options" />acute angle
+          ><input type="radio" required name="ques2Options" /> acute angle
           triangle</label
         >
 
         <label class="label"
-          ><input type="radio" required name="ques2Options" />right angle
+          ><input type="radio" required name="ques2Options" /> right angle
           triangle</label
         >
       </div>
@@ -78,17 +116,17 @@
         >
 
         <label class="label"
-          ><input type="radio" required name="ques3Options" />right angle
+          ><input type="radio" required name="ques3Options" /> right angle
           triangle</label
         >
 
         <label class="label"
-          ><input type="radio" required name="ques3Options" />obtuse angle
+          ><input type="radio" required name="ques3Options" /> obtuse angle
           triangle</label
         >
 
         <label class="label"
-          ><input type="radio" required name="ques3Options" />acute angle
+          ><input type="radio" required name="ques3Options" /> acute angle
           triangle</label
         >
       </div>
@@ -99,19 +137,19 @@
         >
 
         <label class="label"
-          ><input type="radio" required name="ques4Options" />45<sup
+          ><input type="radio" required name="ques4Options" /> 45<sup
             >0</sup
           ></label
         >
 
         <label class="label"
-          ><input type="radio" required name="ques4Options" />60<sup
+          ><input type="radio" required name="ques4Options" /> 60<sup
             >0</sup
           ></label
         >
 
         <label class="label"
-          ><input type="radio" required name="ques4Options" />40<sup
+          ><input type="radio" required name="ques4Options" /> 40<sup
             >0</sup
           ></label
         >
@@ -122,32 +160,33 @@
         </label>
 
         <label class="label"
-          ><input type="radio" required name="ques5Options" />Scalene</label
+          ><input type="radio" required name="ques5Options" /> Scalene</label
         >
 
         <label class="label"
-          ><input type="radio" required name="ques5Options" />Isosceles</label
+          ><input type="radio" required name="ques5Options" /> Isosceles</label
         >
 
         <label class="label"
-          ><input type="radio" required name="ques5Options" />Equilateral</label
+          ><input type="radio" required name="ques5Options" />
+          Equilateral</label
         >
       </div>
       <div class="quiz-content">
         <label class="quiz-question">6. An isosceles triangle has </label>
 
         <label class="label"
-          ><input type="radio" required name="ques6Options" />No congruent
+          ><input type="radio" required name="ques6Options" /> No congruent
           sides</label
         >
 
         <label class="label"
-          ><input type="radio" required name="ques6Options" />2 congruent
+          ><input type="radio" required name="ques6Options" /> 2 congruent
           sides</label
         >
 
         <label class="label"
-          ><input type="radio" required name="ques6Options" />3 congruent
+          ><input type="radio" required name="ques6Options" /> 3 congruent
           sides</label
         >
       </div>
@@ -157,15 +196,15 @@
         </label>
 
         <label class="label"
-          ><input type="radio" required name="ques7Options" />altitude</label
+          ><input type="radio" required name="ques7Options" /> altitude</label
         >
 
         <label class="label"
-          ><input type="radio" required name="ques6Options" />hypotenuse</label
+          ><input type="radio" required name="ques6Options" /> hypotenuse</label
         >
 
         <label class="label"
-          ><input type="radio" required name="ques6Options" />angle
+          ><input type="radio" required name="ques6Options" /> angle
           bisector</label
         >
       </div>
@@ -176,19 +215,21 @@
         </label>
 
         <label class="label"
-          ><input type="radio" required name="ques8Options" />3</label
+          ><input type="radio" required name="ques8Options" /> 3</label
         >
 
         <label class="label"
-          ><input type="radio" required name="ques8Options" />15</label
+          ><input type="radio" required name="ques8Options" /> 15</label
         >
 
         <label class="label"
-          ><input type="radio" required name="ques8Options" />5</label
+          ><input type="radio" required name="ques8Options" /> 5</label
         >
       </div>
     </form>
 
+    <button class="submitBtn">Submit</button>
+    <h4 class="resultTxt"></h4>
     <script src="app.js"></script>
   </body>
 </html>
