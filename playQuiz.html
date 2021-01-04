@@ -36,8 +36,8 @@
     </header>
     <form id="form-quiz">
       <div class="quiz-content">
-        <h2 class="wrong-emoji">😟 Incorrect! Review it</h2>
-        <h2 class="correct-emoji">😃 Correct! Great</h2>
+        <h2 class="resultMsg"></h2>
+
         <label class="quiz-question"
           >1. A triangle has angles 130<sup>0</sup>, 20<sup>0</sup>and
           30<sup>0</sup>. Which type of triangle is this ?</label
@@ -48,9 +48,9 @@
               type="radio"
               required
               name="ques1Options"
-              value="right angle triangle"
+              value="Right angle triangle"
             />
-            right angle triangle <span class="checkmark"></span>
+            Right angle triangle <span class="checkmark"></span>
           </label>
 
           <label class="label"
@@ -58,8 +58,8 @@
               type="radio"
               required
               name="ques1Options"
-              value="acute angle triangle" />
-            acute angle triangle <span class="checkmark"></span
+              value="Acute angle triangle" />
+            Acute angle triangle <span class="checkmark"></span
           ></label>
 
           <label class="label"
@@ -67,164 +67,369 @@
               type="radio"
               required
               name="ques1Options"
-              value="obtuse angle triangle" />
-            obtuse angle triangle <span class="checkmark"></span
+              value="Obtuse angle triangle" />
+            Obtuse angle triangle <span class="checkmark"></span
           ></label>
         </div>
         <div class="correct">
           <div class="new-answer wrongOne">
             <i class="fas fa-window-close"></i>
-            right angle triangle <span class="checkmark"></span>
+            Right angle triangle <span class="checkmark"></span>
           </div>
 
           <div class="new-answer wrongOne">
             <i class="fas fa-window-close"></i>
-            acute angle triangle <span class="checkmark"></span>
+            Acute angle triangle <span class="checkmark"></span>
           </div>
 
           <div class="new-answer correctOne">
             <i class="fas fa-check-square"></i>
-            obtuse angle triangle <span class="checkmark"></span>
+            Obtuse angle triangle <span class="checkmark"></span>
           </div>
         </div>
       </div>
       <div class="quiz-content">
+        <h2 class="resultMsg"></h2>
         <label class="quiz-question"
           >2. A triangle has angles 80<sup>0</sup>, 60<sup>0</sup> and
           40<sup>0</sup>. Which type of triangle is this ?</label
         >
+        <div class="content-one">
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques2Options"
+              value="Obtuse angle triangle" />
+            Obtuse angle triangle <span class="checkmark"></span
+          ></label>
 
-        <label class="label"
-          ><input type="radio" required name="ques2Options" /> obtuse angle
-          triangle</label
-        >
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques2Options"
+              value="Acute angle triangle" />
+            Acute angle triangle <span class="checkmark"></span
+          ></label>
 
-        <label class="label"
-          ><input type="radio" required name="ques2Options" /> acute angle
-          triangle</label
-        >
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques2Options"
+              value="Right angle triangle" />
+            Right angle triangle <span class="checkmark"></span
+          ></label>
+        </div>
+        <div class="correct">
+          <div class="new-answer wrongOne">
+            <i class="fas fa-window-close"></i>
+            Obtuse angle triangle <span class="checkmark"></span>
+          </div>
 
-        <label class="label"
-          ><input type="radio" required name="ques2Options" /> right angle
-          triangle</label
-        >
+          <div class="new-answer correctOne">
+            <i class="fas fa-check-square"></i>
+            Acute angle triangle <span class="checkmark"></span>
+          </div>
+
+          <div class="new-answer wrongOne">
+            <i class="fas fa-window-close"></i>
+            Right angle triangle <span class="checkmark"></span>
+          </div>
+        </div>
       </div>
       <div class="quiz-content">
+        <h2 class="resultMsg"></h2>
         <label class="quiz-question"
           >3. A triangle has angles 90<sup>0</sup>, 50<sup>0</sup> and
           40<sup>0</sup>. Which type of triangle is this ?</label
         >
+        <div class="content-one">
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques3Options"
+              value="Right angle triangle" />
+            Right angle triangle <span class="checkmark"></span
+          ></label>
 
-        <label class="label"
-          ><input type="radio" required name="ques3Options" /> right angle
-          triangle</label
-        >
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques3Options"
+              value="Obtuse angle triangle" />
+            Obtuse angle triangle <span class="checkmark"></span
+          ></label>
 
-        <label class="label"
-          ><input type="radio" required name="ques3Options" /> obtuse angle
-          triangle</label
-        >
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques3Options"
+              value="Acute angle triangle" />
+            Acute angle triangle <span class="checkmark"></span
+          ></label>
+        </div>
+        <div class="correct">
+          <div class="new-answer correctOne">
+            <i class="fas fa-check-square"></i> Right angle triangle
+            <span class="checkmark"></span>
+          </div>
 
-        <label class="label"
-          ><input type="radio" required name="ques3Options" /> acute angle
-          triangle</label
-        >
+          <div class="new-answer wrongOne">
+            <i class="fas fa-window-close"></i>
+            Obtuse angle triangle <span class="checkmark"></span>
+          </div>
+
+          <div class="new-answer wrongOne">
+            <i class="fas fa-window-close"></i>
+            Acute angle triangle <span class="checkmark"></span>
+          </div>
+        </div>
       </div>
       <div class="quiz-content">
+        <h2 class="resultMsg"></h2>
         <label class="quiz-question"
           >4. Two angles of a triangle are 90<sup>0</sup> and 50<sup>0</sup>.
           What will be the measure of third angle ?</label
         >
+        <div class="content-one">
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques4Options"
+              value="45 degree" />
+            45<sup>0</sup> <span class="checkmark"></span
+          ></label>
 
-        <label class="label"
-          ><input type="radio" required name="ques4Options" /> 45<sup
-            >0</sup
-          ></label
-        >
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques4Options"
+              value="60 degree" />
+            60<sup>0</sup> <span class="checkmark"></span
+          ></label>
 
-        <label class="label"
-          ><input type="radio" required name="ques4Options" /> 60<sup
-            >0</sup
-          ></label
-        >
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques4Options"
+              value="40 degree" />
+            40<sup>0</sup><span class="checkmark"></span
+          ></label>
+        </div>
+        <div class="correct">
+          <div class="new-answer wrongOne">
+            <i class="fas fa-window-close"></i>
+            45<sup>0</sup> <span class="checkmark"></span>
+          </div>
 
-        <label class="label"
-          ><input type="radio" required name="ques4Options" /> 40<sup
-            >0</sup
-          ></label
-        >
+          <div class="new-answer wrongOne">
+            <i class="fas fa-window-close"></i>
+            60<sup>0</sup> <span class="checkmark"></span>
+          </div>
+
+          <div class="new-answer correctOne">
+            <i class="fas fa-check-square"></i>
+            40<sup>0</sup> <span class="checkmark"></span>
+          </div>
+        </div>
       </div>
       <div class="quiz-content">
+        <h2 class="resultMsg"></h2>
         <label class="quiz-question"
           >5. A triangle where all sides are congruent is called as
         </label>
 
-        <label class="label"
-          ><input type="radio" required name="ques5Options" /> Scalene</label
-        >
+        <div class="content-one">
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques5Options"
+              value="Scalene triangle" />
+            Scalene triangle <span class="checkmark"></span
+          ></label>
 
-        <label class="label"
-          ><input type="radio" required name="ques5Options" /> Isosceles</label
-        >
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques5Options"
+              value="Isosceles triangle" />
+            Isosceles triangle <span class="checkmark"></span
+          ></label>
 
-        <label class="label"
-          ><input type="radio" required name="ques5Options" />
-          Equilateral</label
-        >
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques5Options"
+              value="Equilateral triangle" />
+            Equilateral triangle <span class="checkmark"></span
+          ></label>
+        </div>
+        <div class="correct">
+          <div class="new-answer wrongOne">
+            <i class="fas fa-window-close"></i>
+            Scalene triangle <span class="checkmark"></span>
+          </div>
+
+          <div class="new-answer wrongOne">
+            <i class="fas fa-window-close"></i>
+            Isosceles triangle <span class="checkmark"></span>
+          </div>
+
+          <div class="new-answer correctOne">
+            <i class="fas fa-check-square"></i>
+            Equilateral triangle <span class="checkmark"></span>
+          </div>
+        </div>
       </div>
       <div class="quiz-content">
+        <h2 class="resultMsg"></h2>
         <label class="quiz-question">6. An isosceles triangle has </label>
 
-        <label class="label"
-          ><input type="radio" required name="ques6Options" /> No congruent
-          sides</label
-        >
+        <div class="content-one">
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques6Options"
+              value="No congruent sides" />
+            No congruent sides <span class="checkmark"></span
+          ></label>
 
-        <label class="label"
-          ><input type="radio" required name="ques6Options" /> 2 congruent
-          sides</label
-        >
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques6Options"
+              value="2 congruent sides" />
+            2 congruent sides <span class="checkmark"></span
+          ></label>
 
-        <label class="label"
-          ><input type="radio" required name="ques6Options" /> 3 congruent
-          sides</label
-        >
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques6Options"
+              value="3 congruent sides" />
+            3 congruent sides <span class="checkmark"></span
+          ></label>
+        </div>
+        <div class="correct">
+          <div class="new-answer wrongOne">
+            <i class="fas fa-window-close"></i>
+            No congruent sides <span class="checkmark"></span>
+          </div>
+
+          <div class="new-answer correctOne">
+            <i class="fas fa-check-square"></i>
+            2 congruent sides <span class="checkmark"></span>
+          </div>
+
+          <div class="new-answer wrongOne">
+            <i class="fas fa-window-close"></i>
+            3 congruent sides <span class="checkmark"></span>
+          </div>
+        </div>
       </div>
       <div class="quiz-content">
+        <h2 class="resultMsg"></h2>
         <label class="quiz-question"
           >7. In right triangle, the side opposite to right angle is called as
         </label>
 
-        <label class="label"
-          ><input type="radio" required name="ques7Options" /> altitude</label
-        >
+        <div class="content-one">
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques7Options"
+              value="Altitude" />
+            Altitude <span class="checkmark"></span
+          ></label>
 
-        <label class="label"
-          ><input type="radio" required name="ques6Options" /> hypotenuse</label
-        >
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques6Options"
+              value="Hypotenuse" />
+            Hypotenuse <span class="checkmark"></span
+          ></label>
 
-        <label class="label"
-          ><input type="radio" required name="ques6Options" /> angle
-          bisector</label
-        >
+          <label class="label"
+            ><input
+              type="radio"
+              required
+              name="ques6Options"
+              value="Angle bisector" />
+            Angle bisector <span class="checkmark"></span
+          ></label>
+        </div>
+        <div class="correct">
+          <div class="new-answer wrongOne">
+            <i class="fas fa-window-close"></i>
+            Altitude<span class="checkmark"></span>
+          </div>
+
+          <div class="new-answer correctOne">
+            <i class="fas fa-check-square"></i>
+            Hypotenuse <span class="checkmark"></span>
+          </div>
+
+          <div class="new-answer wrongOne">
+            <i class="fas fa-window-close"></i>
+            Angle bisector <span class="checkmark"></span>
+          </div>
+        </div>
       </div>
       <div class="quiz-content">
+        <h2 class="resultMsg"></h2>
         <label class="quiz-question"
           >8. The perimeter of a equilateral triangle is 15cm. What is the
           length of one side?
         </label>
+        <div class="content-one">
+          <label class="label"
+            ><input type="radio" required name="ques8Options" value="3" /> 3
+            <span class="checkmark"></span
+          ></label>
 
-        <label class="label"
-          ><input type="radio" required name="ques8Options" /> 3</label
-        >
+          <label class="label"
+            ><input type="radio" required name="ques8Options" value="15" /> 15
+            <span class="checkmark"></span
+          ></label>
 
-        <label class="label"
-          ><input type="radio" required name="ques8Options" /> 15</label
-        >
+          <label class="label"
+            ><input type="radio" required name="ques8Options" value="5" /> 5
+            <span class="checkmark"></span
+          ></label>
+        </div>
+        <div class="correct">
+          <div class="new-answer wrongOne">
+            <i class="fas fa-window-close"></i>
+            3 <span class="checkmark"></span>
+          </div>
 
-        <label class="label"
-          ><input type="radio" required name="ques8Options" /> 5</label
-        >
+          <div class="new-answer wrongOne">
+            <i class="fas fa-window-close"></i>
+            15 <span class="checkmark"></span>
+          </div>
+
+          <div class="new-answer correctOne">
+            <i class="fas fa-check-square"></i>
+            5 <span class="checkmark"></span>
+          </div>
+        </div>
       </div>
     </form>
 
