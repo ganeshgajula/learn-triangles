@@ -24,7 +24,7 @@
         </li>
       </ul>
     </nav>
-    <header>
+    <header id="heading-title">
       <h2>Let's calculate hypotenuse of a right angled triangle</h2>
     </header>
     <section id="hypo-section">
@@ -35,13 +35,24 @@
           theorem as follows:
         </p>
         <h4>Formula: hypotenuse = √(base² + height²)</h4>
-        <p>Enter the length of base and perpendicular height of a triangle</p>
+
         <form id="hypo-form">
-          <label for="base">Base</label>
-          <input type="number" id="hypoBase" min="1" required /><br /><br />
-          <label for="height">Height</label>
-          <input type="number" id="hypoHeight" min="1" required />
-          <br /><br />
+          <input
+            type="number"
+            id="hypoBase"
+            min="1"
+            required
+            placeholder="Enter base value"
+          />
+
+          <input
+            type="number"
+            id="hypoHeight"
+            min="1"
+            required
+            placeholder="Enter height value"
+          />
+
           <button class="submitBtn">Calculate</button>
         </form>
         <div>
@@ -68,9 +79,9 @@
         console.log(baseSquare);
         console.log(heightSquare);
         const finalResult = Math.sqrt(result);
-        console.log(finalResult);
+        const hypoResult = finalResult.toFixed(2);
 
-        calcHypo.innerText = `Hypotenuse of a triangle with base ${hypoBaseValue} units & height ${hypoHeightValue} units is ${finalResult} units`;
+        calcHypo.innerText = `Hypotenuse of a triangle with base ${hypoBaseValue} units & height ${hypoHeightValue} units is ${hypoResult} units`;
       }
 
       submitBtn.addEventListener("click", btnClickHandler);

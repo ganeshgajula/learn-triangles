@@ -234,7 +234,9 @@ button {
 
 .sideOne,
 .sideTwo,
-.sideThree {
+.sideThree,
+#hypoBase,
+#hypoHeight {
   margin: 1rem auto;
   padding: 0.4rem;
   border-radius: 0.4rem;
@@ -252,10 +254,23 @@ button {
   margin-left: 0.4rem;
 }
 
+#angleA,
+#angleB,
+#angleC {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  border: none;
+  width: 180px;
+}
+
 #areaOneResult,
 #areaTwoResult,
 #areaThreeResult,
-#areaFourResult {
+#areaFourResult,
+#calcHypo,
+#anglesSum {
   font-size: 1.3rem;
 }
 
@@ -264,7 +279,8 @@ img {
   width: 320px;
 }
 
-#hypo-section {
+#hypo-section,
+#angles-section {
   max-width: 580px;
   margin: auto;
   text-align: center;
@@ -272,4 +288,24 @@ img {
 
 #hypo-section img {
   border-radius: 0.5rem;
+}
+
+#hypo-section p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.example-msg {
+  margin-bottom: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.output p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.output h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
