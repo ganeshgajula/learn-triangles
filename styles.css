@@ -83,14 +83,14 @@ a {
   left: 0;
   height: 24px;
   width: 25px;
-  background-color: #eee;
+  background-color: #333;
   border-radius: 50%;
   margin-left: 3px;
 }
 
 /* On mouse-over, add a grey background color */
 .label:hover input ~ .checkmark {
-  background-color: #333;
+  background-color: #fff;
 }
 
 /* When the checkbox is checked, add a blue background */
@@ -150,10 +150,11 @@ a {
 }
 
 .quiz-content {
-  border: 1px solid #333;
+  /* border: 1px solid #333; */
+  background-color: #e5e7eb;
   padding: 1rem 2rem;
   padding-top: 0px;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
 }
 
 .display-status {
@@ -186,6 +187,12 @@ a {
   font-size: 2.1rem;
 }
 
+#area-section {
+  background-color: #e5e7eb;
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+
 #area-section p {
   font-weight: bold;
   font-size: 1.3rem;
@@ -198,7 +205,7 @@ a {
 
 .output {
   text-align: center;
-  border: 2px solid #333;
+  background-color: #e5e7eb;
   border-radius: 1rem;
   margin-top: 2rem;
   padding: 0.2rem 0.5rem;
@@ -289,6 +296,9 @@ img {
   max-width: 580px;
   margin: auto;
   text-align: center;
+  background-color: #e5e7eb;
+  padding: 1rem 0.5rem;
+  border-radius: 1rem;
 }
 
 #hypo-section img {
@@ -363,13 +373,14 @@ img {
 }
 
 @media (max-width: 500px) {
+  #navigation-container {
+    max-width: 355px;
+    margin: auto;
+  }
+
   #list-item-inline {
     display: block;
     margin-bottom: 1rem;
-  }
-  #form-quiz {
-    max-width: 350px;
-    margin: auto;
   }
 
   .quiz-content {
@@ -380,6 +391,13 @@ img {
     font-size: 2.2rem;
   }
 
+  img {
+    height: 200px;
+    width: 250px;
+  }
+
+  #heading-title,
+  #form-quiz,
   #area-section,
   .output {
     max-width: 350px;
@@ -388,6 +406,10 @@ img {
 
   .output {
     margin-top: 2rem;
+  }
+
+  .value {
+    margin: 0.6rem auto;
   }
 
   .sideOne,
