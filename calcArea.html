@@ -29,47 +29,49 @@
     </header>
     <section id="area-section">
       <p>Pick an option from below</p>
-
-      <label for="option1"
-        ><input type="radio" name="options" value="first" />Area of a right
-        angled triange (base and height known)</label
-      >
-      <br />
-      <br />
-
-      <label for="option2"
-        ><input type="radio" name="options" value="second" />Area of an
-        equilateral triange (all sides of triangle must be equal)</label
-      >
-      <br />
-      <br />
-
-      <label for="option3"
-        ><input type="radio" name="options" value="third" />Area of a triangle
-        (with all 3 sides having different measures)</label
-      >
-      <br />
-      <br />
-
-      <label for="option4"
-        ><input type="radio" name="options" value="four" />Area of a triangle
-        (with 2 sides and one angle known)</label
-      >
-      <br />
+      <label class="label"
+        ><input type="radio" required name="options" value="first" />
+        Area of a right angled triange (base and height known)
+        <span class="checkmark"></span
+      ></label>
+      <label class="label"
+        ><input type="radio" required name="options" value="second" /> Area of
+        an equilateral triange (all sides of triangle must be equal)
+        <span class="checkmark"></span
+      ></label>
+      <label class="label"
+        ><input type="radio" required name="options" value="third" /> Area of a
+        triange (with all 3 sides having different measures)
+        <span class="checkmark"></span
+      ></label>
+      <label class="label"
+        ><input type="radio" required name="options" value="four" /> Area of a
+        triange (with 2 sides and one angle known)
+        <span class="checkmark"></span
+      ></label>
     </section>
     <section id="outputContentOne">
       <div class="output">
-        <h3>Area of a right angle triangle</h3>
+        <h3>Area of a right angled triangle</h3>
         <img src="/right-angled-triangle.png" alt="right-angle-triangle" />
         <p>The formula to calculate the area of right angled triangle is</p>
         <h4>Formula: 1/2 x base x height</h4>
         <form class="calcArea">
-          <label for="base"
-            >base:<input type="number" class="base" min="1" required
-          /></label>
+          <input
+            type="number"
+            class="base values"
+            min="1"
+            required
+            placeholder="Enter base"
+          />
 
-          <label for="base">height:</label>
-          <input type="number" class="height" min="1" required />
+          <input
+            type="number"
+            class="height values"
+            min="1"
+            required
+            placeholder="Enter height"
+          />
           <button class="calcAreaOne">Calculate</button>
         </form>
         <div>
@@ -84,8 +86,13 @@
         <p>The formula to calculate the area of equilateral triangle is</p>
         <h4>Formula: (√3)/4 × side <sup>2</sup></h4>
         <form class="calcArea">
-          <label for="side">side</label>
-          <input type="number" class="side" min="1" required />
+          <input
+            type="number"
+            class="side values"
+            min="1"
+            required
+            placeholder="Enter side"
+          />
           <button class="calcAreaTwo">Calculate</button>
         </form>
         <div>
@@ -106,12 +113,27 @@
           where , s is semi-perimeter of the triangle : s = (a+b+c) / 2
         </h4>
         <form class="calcArea">
-          <label for="sideOne">a</label>
-          <input type="number" class="sideOne" min="1" required />
-          <label for="sideTwo">b</label>
-          <input type="number" class="sideTwo" min="1" required />
-          <label for="sideThree">c</label>
-          <input type="number" class="sideThree" min="1" required />
+          <input
+            type="number"
+            class="sideOne"
+            min="1"
+            required
+            placeholder="sideone value"
+          />
+          <input
+            type="number"
+            class="sideTwo"
+            min="1"
+            required
+            placeholder="sideTwo value"
+          />
+          <input
+            type="number"
+            class="sideThree"
+            min="1"
+            required
+            placeholder="sideThree value"
+          />
           <button class="calcAreaThree">Calculate</button>
         </form>
         <div>
@@ -134,12 +156,30 @@
         </h4>
 
         <form class="calcArea">
-          <label for="angle">∠A</label>
-          <input type="number" class="angleA" min="1" max="180" required />
-          <label for="side">b</label>
-          <input type="number" class="sideB" min="1" required />
-          <label for="side">c</label>
-          <input type="number" class="sideC" min="1" required />
+          <input
+            type="number"
+            class="angleA value"
+            min="1"
+            max="180"
+            required
+            placeholder="Enter angle in degrees"
+          />
+
+          <input
+            type="number"
+            class="sideB value"
+            min="1"
+            required
+            placeholder="Enter side one value"
+          />
+
+          <input
+            type="number"
+            class="sideC value"
+            min="1"
+            required
+            placeholder="Enter side two value"
+          />
           <button class="calcAreaFour" type="submit">Calculate</button>
         </form>
         <div>

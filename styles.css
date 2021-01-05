@@ -41,16 +41,12 @@ section {
 
 a {
   color: #fff;
+  text-decoration: none;
 }
 
 #form-quiz {
   max-width: 680px;
   margin: auto;
-}
-
-.label {
-  display: block;
-  border: 1px solid black;
 }
 
 .quiz-content {
@@ -172,6 +168,8 @@ a {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-radius: 0.3rem;
+  display: block;
+  border: 1px solid black;
 }
 
 .resultTxt {
@@ -206,5 +204,72 @@ a {
 }
 
 .output img {
+  border-radius: 0.5rem;
+}
+
+.values {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  border: none;
+}
+
+/* button {
+  cursor: pointer;
+} */
+
+button {
+  display: block;
+  margin: auto;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.3rem;
+  border: none;
+  color: #fff;
+  background-color: #6b7280;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sideOne,
+.sideTwo,
+.sideThree {
+  margin: 1rem auto;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  border: none;
+  width: 140px;
+  margin-left: 0.4rem;
+}
+
+.value {
+  margin: 1rem auto;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  border: none;
+  width: 170px;
+  margin-left: 0.4rem;
+}
+
+#areaOneResult,
+#areaTwoResult,
+#areaThreeResult,
+#areaFourResult {
+  font-size: 1.3rem;
+}
+
+img {
+  height: 240px;
+  width: 320px;
+}
+
+#hypo-section {
+  max-width: 580px;
+  margin: auto;
+  text-align: center;
+}
+
+#hypo-section img {
   border-radius: 0.5rem;
 }
