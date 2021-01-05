@@ -372,7 +372,54 @@ img {
   color: #08090a;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 359px) {
+  #navigation-container {
+    max-width: 260px;
+    margin: auto;
+  }
+  #list-item-inline {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  #heading-title,
+  #form-quiz,
+  #area-section,
+  #hypo-section,
+  #angles-section,
+  .output {
+    max-width: 260px;
+    margin: auto;
+  }
+
+  img {
+    height: 180px;
+    width: 200px;
+  }
+
+  .display-status {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .resultMsg {
+    margin-bottom: 0;
+  }
+
+  .output {
+    margin-top: 2rem;
+  }
+
+  .score {
+    margin-top: 0.2rem;
+  }
+
+  .social i {
+    padding: 0.8rem;
+    color: white;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 548px) {
   #navigation-container {
     max-width: 355px;
     margin: auto;
@@ -399,6 +446,8 @@ img {
   #heading-title,
   #form-quiz,
   #area-section,
+  #hypo-section,
+  #angles-section,
   .output {
     max-width: 350px;
     margin: auto;
@@ -414,7 +463,9 @@ img {
 
   .sideOne,
   .sideTwo,
-  .sideThree {
+  .sideThree,
+  #hypoBase,
+  #hypoHeight {
     display: block;
     margin: 1rem auto;
   }
@@ -422,5 +473,31 @@ img {
   .social i {
     padding: 0.8rem;
     color: white;
+  }
+}
+
+@media (min-width: 549px) and (max-width: 769px) {
+  #navigation-container {
+    max-width: 550px;
+    margin: auto;
+  }
+
+  #list-item-inline {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  #heading-title,
+  #form-quiz,
+  #area-section,
+  #hypo-section,
+  #angles-section,
+  .output {
+    max-width: 550px;
+    margin: auto;
+  }
+
+  #area-section {
+    margin-bottom: 2rem;
   }
 }
