@@ -67,18 +67,28 @@ function calculateAreaOne(e) {
   e.preventDefault();
   const baseValue = base.value;
   const heightValue = height.value;
-  let result = 0.5 * baseValue * heightValue;
-  console.log(result);
-  areaOneResult.innerText = `Area of a right angled triangle is ${result} units`;
+  if (baseValue <= 0 || baseValue === "") {
+    alert("Please enter the correct base value");
+  } else if (heightValue <= 0 || heightValue === "") {
+    alert("Please enter the correct height value");
+  } else {
+    let result = 0.5 * baseValue * heightValue;
+    console.log(result);
+    areaOneResult.innerText = `Area of a right angled triangle is ${result} units`;
+  }
 }
 
 function calculateAreaTwo(e) {
   e.preventDefault();
   let sideValue = side.value;
-  let formula = (Math.sqrt(3) / 4) * sideValue * sideValue;
-  let result = formula.toFixed(2);
-  console.log(result);
-  areaTwoResult.innerText = `Area of equilateral triangle is ${result} units`;
+  if (sideValue <= 0 || sideValue === "") {
+    alert("Please enter the correct side length");
+  } else {
+    let formula = (Math.sqrt(3) / 4) * sideValue * sideValue;
+    let result = formula.toFixed(2);
+    console.log(result);
+    areaTwoResult.innerText = `Area of equilateral triangle is ${result} units`;
+  }
 }
 
 function calculateAreaThree(e) {
@@ -118,7 +128,7 @@ function calculateAreaFour(e) {
   console.log(finalSinValue);
   let formula = 0.5 * sideBValue * sideCValue * finalSinValue;
   console.log(formula);
-  areaFourResult.innerText = `Are of triangle is ${formula} units`;
+  areaFourResult.innerText = `Area of triangle is ${formula} units`;
 }
 
 function inputChangeOne() {
