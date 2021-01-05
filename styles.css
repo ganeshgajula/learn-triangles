@@ -476,7 +476,7 @@ img {
   }
 }
 
-@media (min-width: 549px) and (max-width: 769px) {
+@media (min-width: 549px) and (max-width: 800px) {
   #navigation-container {
     max-width: 550px;
     margin: auto;
